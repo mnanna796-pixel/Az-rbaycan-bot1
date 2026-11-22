@@ -1,0 +1,9 @@
+{
+  "name": "azerbaycan-reklam-bot",
+  "version": "1.0.0",
+  "description": "Telegram reklam ve referal botu",
+  "main": "index.js",
+  "scripts": {"start": "node index.js"},
+  "engines": {"node": ">=20"},
+  "dependencies": {"dotenv": "^16.4.7", "express": "^4.21.2", "pg": "^8.13.1", "telegraf": "^4.16.3"}
+}

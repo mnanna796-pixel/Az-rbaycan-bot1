@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: azerbaycan-reklam-bot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        value: "7964569307"
+      - key: CHANNEL_ID
+        value: "@alqisatqielanazerbaycan"
+      - key: DATABASE_URL
+        sync: false
+      - key: REFERRAL_REWARD
+        value: "5"
